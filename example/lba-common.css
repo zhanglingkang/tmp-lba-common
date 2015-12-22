@@ -1,51 +1,67 @@
-@charset "UTF-8";
-.rtl, header .right {
+.rtl, header.header .right {
   direction: rtl;
 }
 
-.ltr, header .right div {
+.ltr, header.header .right div {
   direction: ltr;
 }
 
-header {
-  height: 80px;
-  border-bottom: 1px solid #eee;
+header.header {
+  padding: 0 20px;
+  border-bottom: 1px solid #c6c9cc;
   background-color: #ffffff;
-  padding: 15px;
-  font-family: 微软雅黑;
 }
-header .split {
+header.header .split {
   margin: 0 10px;
-  border-right: 1px solid #c4c4c4;
 }
-header .left {
+header.header .left span, header.header .right span {
+  display: inline-block;
+  height: 70px;
+  line-height: 70px;
+}
+header.header .left {
   font-size: 18px;
 }
-header .right {
+header.header .left .split {
+  font-size: 20px;
+  color: #8e8e8e;
+}
+header.header .left .logo {
+  margin-right: 10px;
+}
+header.header .right {
   font-size: 16px;
 }
-header .right .message-total {
+header.header .right .split {
+  color: #c4c4c4;
+  font-size: 18px;
+}
+header.header .right > * {
+  height: 70px;
+}
+header.header .right .message-total {
   font-size: 14px;
   color: #ff843f;
 }
-header .right .message {
+header.header .right .message {
   margin-right: 10px;
+  margin-bottom: 4px;
 }
-header .right .user {
-  vertical-align: top;
+header.header .right .user {
+  margin-bottom: 4px;
 }
-header .right .logout {
+header.header .right .logout {
   color: #0091ff;
   margin-left: 15px;
 }
-header .right div {
+header.header .right div {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
   *zoom: 1;
   *display: inline;
 }
-header > div {
+header.header > div {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;

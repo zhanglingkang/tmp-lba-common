@@ -8,22 +8,41 @@
   direction: ltr;
 }
 
-$headerHeight: 80px;
+$headerHeight: 70px;
 
-header {
-  height: $headerHeight;
-  border-bottom: 1px solid #eee;
+header.header {
+  padding: 0 20px;
+  border-bottom: 1px solid #c6c9cc;
   background-color: #ffffff;
-  padding: 15px;
-  font-family: 微软雅黑;
   .split {
     margin: 0 10px;
-    border-right: 1px solid #c4c4c4;
+    //border-right: 1px solid #c4c4c4;
+  }
+  .left, .right {
+    span {
+      display: inline-block;
+      height: $headerHeight;
+      line-height: $headerHeight;
+    }
   }
   .left {
+    .split {
+      font-size: 20px;
+      color: #8e8e8e;
+    }
+    .logo {
+      margin-right: 10px;
+    }
     font-size: 18px;
   }
   .right {
+    .split {
+      color: #c4c4c4;
+      font-size: 18px;
+    }
+    > * {
+      height: $headerHeight;
+    }
     font-size: 16px;
     @extend .rtl;
     .message-total {
@@ -32,9 +51,10 @@ header {
     }
     .message {
       margin-right: 10px;
+      margin-bottom: 4px;
     }
     .user {
-      vertical-align: top;
+      margin-bottom: 4px;
     }
     .logout {
       color: #0091ff;

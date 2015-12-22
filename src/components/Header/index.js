@@ -14,22 +14,22 @@ class Header extends React.Component {
 
     render() {
         return (
-            <header className="">
+            <header className="header">
                 <div className="left">
-                    <img className="logo" src={logo}/>
+                    <span><img className="logo" src={logo}/></span>
                     <span>高得准</span>
-                    <span className="split"></span>
+                    <span className="split">|</span>
                     <span>管理平台</span>
                 </div>
                 <div className="right">
                     <div>
-                        <img className="message" src={message}/>
+                        <span><img className="message" src={message}/></span>
                         <span>消息</span>
                         <span className="message-total">(99)</span>
-                        <span className="split"></span>
-                        <img className="user" src={user}/>
+                        <span className="split">|</span>
+                        <span><img className="user" src={user}/></span>
                         <span>路人甲</span>
-                        <a className="logout" href="">退出</a>
+                        <span><a className="logout" href="">退出</a></span>
                     </div>
                 </div>
             </header>
