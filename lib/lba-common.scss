@@ -1,0 +1,26 @@
+@import "compass";
+
+.rtl {
+  direction: rtl;
+}
+
+header {
+  padding: 15px;
+  font-family: 微软雅黑;
+  .split {
+    margin: 0 10px;
+    border-right: 1px solid #c4c4c4;
+  }
+  .left {
+    font-size: 18px;
+  }
+  .right {
+    font-size: 16px;
+    @extend .rtl;
+  }
+  > div {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+  }
+}
